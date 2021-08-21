@@ -4,31 +4,43 @@ import { useState } from "react";
 
 const favMusic = {
   pop: [
-    { name: "Justin Bieber" },
-    { name: "24kGoldn" },
-    { name: "Ariana Grande" }
+    { name: "Justin Bieber", rating: "5/5", trait: "Strong come-back" },
+    { name: "24kGoldn", rating: "3.5/5", trait: "Newcomer and strong vocals" },
+    { name: "Ariana Grande", rating: "4.5", trait: "all-rounder" }
   ],
 
   hiphop: [
     {
-      name: "Russ"
+      name: "Russ",
+      rating: "4.6",
+      trait: "consistent and independnent"
     },
     {
-      name: "Logic"
+      name: "Logic",
+      rating: 3.8,
+      trait: "premium quality sound with no pop feel."
     },
     {
-      name: "J-Cole"
+      name: "J-Cole",
+      rating: "4.8",
+      trait: "one of the greatest of the generation."
     }
   ],
   Edm: [
     {
-      name: "Amelie Lens"
+      name: "Amelie Lens",
+      rating: "3.2",
+      trait: "captivating techno music and crowd control"
     },
     {
-      name: "Lost Stories"
+      name: "Lost Stories",
+      rating: "4.3",
+      trait: "Smooth mixture of melodies"
     },
     {
-      name: "Avicci"
+      name: "Avicci",
+      rating: "4.9",
+      trait: "message always conveyed through songs"
     }
   ]
 };
@@ -81,6 +93,7 @@ export default function App() {
             >
               <div style={{ fontSize: "larger" }}>{music.name}</div>
               <div style={{ fontSize: "smaller" }}>{music.rating}</div>
+              <div style={{ fontSize: "smaller" }}>{music.trait}</div>
             </li>
           ))}
         </ul>
